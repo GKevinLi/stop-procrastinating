@@ -1,0 +1,67 @@
+<html>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" type="text/css" href="hello.css">
+  
+  
+  <body>
+    <h1 id="title">
+      get your lazy ass off youtube
+    </h1>
+
+    <nav>
+
+      <label for="touch"><span>Change Time</span></label>               
+      <input type="checkbox" id="touch"> 
+    
+      <section class="slide">
+        
+      
+        <form id = "TimeInputForm">
+          <label for="url">Set Tommorrow's Time:</label>
+          <input type="number" name="url" id="input2"/>
+          <select id="options" name="time">
+            <option value="Hours">Hours</option>
+            <option value="Minutes">Minutes</option>
+          </select>
+          <button type="button" id="mybutton2">Enter</button>
+          <p id="TimeText1">Time Set Tommorrow: </p>
+          
+        </form>
+        <p id="newtext"></p>
+        
+    
+        
+        
+        
+      </section>
+      
+
+    </nav> 
+    
+    <nav>
+
+      <label for="touch2"><span>Change Blocked Sites</span></label>               
+      <input type="checkbox" id="touch2"> 
+    
+      <section class="slide2">
+        
+      
+        <form id="URLInputForm">
+          <label for="url">Enter an URL:</label>
+          <input type="url" name="url" id="input" placeholder="https://example.com" pattern="https://.*" size = "30" required/>
+          <button type="button" id="mybutton">Enter</button>
+        </form>
+        
+        
+        <h1 id="myspan">
+        </h1>
+      </section>
+
+    </nav>
+    
+    
+    
+    <script src="program.js"></script>
+  </body>
+</html>

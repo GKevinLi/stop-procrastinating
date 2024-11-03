@@ -1,0 +1,195 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    background : #bfbfbf; 
+}
+
+
+html
+{
+    width: 350px;  /* max: 800px */
+    height: 100px; /* max: 600px */
+}
+p {
+    font-size: 24;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+span {
+    padding : 10px;
+    background : #2d2f31; 
+    color : white;
+    font-size : 1.5em;
+    font-variant : small-caps;
+    border: 2px solid black;
+    cursor : pointer;
+    display: block;
+    content: "+";
+}
+  
+span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+    
+}
+#failure {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14;
+    color: red;
+}
+#success {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14;
+    color: lightgreen;
+}
+#title {
+    font-size: 22;
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    font-family: 'Montserrat';
+}
+#timer {
+    font-size: 16;
+    text-align: center;
+    border-top: 3px solid black;
+    padding: 5px;
+    font-family: 'Montserrat';
+}
+#nextTime {
+    
+    
+    color : white;
+    font-size : 0.65em;
+    text-align: center;
+    
+    padding-top: -30px;
+    padding-left: 10px;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+}
+#bannedList{
+    font-size: 16;
+    text-align: center;
+    
+    list-style-type: square;
+    padding: 15px;
+    padding-top: 0px;
+    font-family: Verdana, Geneva, serif;
+}
+#TimeInputForm {
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    color : white;
+    font-size : 1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+}
+#URLInputForm {
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    color : white;
+    font-size : 1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+}
+#input {
+    width:59%;
+    background-color:gainsboro;
+}
+#TimeText1 {
+    
+    padding-left: 0px;
+    text-align: left;
+    color : white;
+    font-size : 1.1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+    padding-bottom:-30;
+}
+#newText {
+    text-align: center;
+    padding-top: -15px;
+    font-size : 2em;
+    font-family: Inter, sans-serif;
+    border: 3px solid black;
+    background-color:rgb(161, 161, 161);
+    transform: translateY(-15px);
+}
+
+#input2{
+    width:20%;
+    background-color:gainsboro;
+}
+#options{
+    width:20%;
+    background-color:gainsboro;
+    font-size : 1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+}
+#mybutton2 {
+    background-color:gainsboro;
+    font-size : 1em;
+    padding-top: 3px;
+    font-variant : normal;
+    border: 2px solid black;
+    font-family: Inter, sans-serif;
+}
+
+#mybutton2:hover {
+    
+    background-color:rgb(235, 234, 234);
+}
+#mybutton2:active {
+    
+    background-color:rgb(162, 161, 161);
+    transform: translateY(1px);
+}
+#mybutton {
+    background-color:gainsboro;
+    font-size : 1em;
+    padding-top: 3px;
+    font-variant : normal;
+    border: 2px solid black;
+    font-family: Inter, sans-serif;
+}
+
+#mybutton:hover {
+    
+    background-color:rgb(235, 234, 234);
+}
+#mybutton:active {
+    
+    background-color:rgb(162, 161, 161);
+    transform: translateY(1px);
+}
+
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+
+.slide2 {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+#touch:checked + .slide {height: 130px; background-color: #686d72;} 
+#touch:not(:checked) + .slide {height: -130px; background-color: #686d72;} 
+#touch {position: absolute; opacity: 0; height: 0px;}  
+
+#touch2:checked + .slide2 {height: 130px; background-color: #686d72;} 
+#touch2:not(:checked) + .slide2 {height: -130px; background-color: #686d72;} 
+#touch2 {position: absolute; opacity: 0; height: 0px;}  
